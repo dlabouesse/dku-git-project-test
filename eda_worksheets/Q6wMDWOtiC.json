@@ -1,0 +1,1053 @@
+{
+  "dataSpec": {
+    "dataset": {
+      "projectKey": "EDA",
+      "id": "bulldozer_small_extract"
+    },
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "cards": [
+      {
+        "type": "sign_test_1samp",
+        "hypothesizedMedian": 33000.0,
+        "confidenceLevel": 0.95,
+        "column": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        }
+      },
+      {
+        "type": "ttest_ztest_1samp",
+        "hypothesizedMean": 33000.0,
+        "confidenceLevel": 0.95,
+        "column": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        }
+      },
+      {
+        "type": "ttest_ztest_1samp",
+        "hypothesizedMean": 3000.0,
+        "confidenceLevel": 0.95,
+        "column": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        }
+      },
+      {
+        "type": "ttest_ztest_1samp",
+        "hypothesizedMean": 33000.0,
+        "knownStdDev": 20000.0,
+        "confidenceLevel": 0.95,
+        "column": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        }
+      },
+      {
+        "type": "chi2_independence_test",
+        "maxValuesX": 5,
+        "maxValuesY": 5,
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "state",
+          "type": "CATEGORICAL"
+        },
+        "yColumn": {
+          "name": "YearMade",
+          "type": "CATEGORICAL"
+        }
+      },
+      {
+        "type": "shapiro",
+        "confidenceLevel": 0.95,
+        "column": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        }
+      },
+      {
+        "type": "mood_nsamp",
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Pad_Type",
+          "type": "CATEGORICAL"
+        }
+      },
+      {
+        "type": "ttest_2samp",
+        "value1": [
+          "Wheel Loader",
+          "Track Excavators"
+        ],
+        "value2": [
+          "Skid Steer Loaders",
+          "Motor Graders"
+        ],
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "ProductGroupDesc",
+          "type": "CATEGORICAL"
+        }
+      },
+      {
+        "type": "mood_test_2samp",
+        "value1": [
+          "Wheel Loader",
+          "Track Excavators"
+        ],
+        "value2": [
+          "Skid Steer Loaders",
+          "Motor Graders"
+        ],
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "ProductGroupDesc",
+          "type": "CATEGORICAL"
+        }
+      },
+      {
+        "type": "ks_test_2samp",
+        "value1": [
+          "Wheel Loader",
+          "Track Excavators"
+        ],
+        "value2": [
+          "Skid Steer Loaders",
+          "Motor Graders"
+        ],
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "ProductGroupDesc",
+          "type": "CATEGORICAL"
+        }
+      },
+      {
+        "type": "oneway_anova",
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Pad_Type",
+          "type": "CATEGORICAL"
+        }
+      },
+      {
+        "type": "pairwise_ttest",
+        "adjustmentMethod": "HOLM_BONFERRONI",
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Pad_Type",
+          "type": "CATEGORICAL"
+        }
+      },
+      {
+        "type": "fit_2d_distribution",
+        "xResolution": 640,
+        "yResolution": 480,
+        "distribution": {
+          "type": "kde_2d"
+        },
+        "xColumn": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "ModelID",
+          "type": "CONTINUOUS"
+        }
+      },
+      {
+        "type": "fit_curve",
+        "curves": [
+          {
+            "type": "polynomial",
+            "degree": 0
+          },
+          {
+            "type": "isotonic"
+          }
+        ],
+        "xColumn": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "ModelID",
+          "type": "CONTINUOUS"
+        }
+      },
+      {
+        "type": "pca",
+        "columns": [
+          {
+            "name": "YearMade",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "SalePrice",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "SalesID",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "MachineID",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "splitBy": {
+          "groupingColumn": "Engine_Horsepower",
+          "maxGroupingValues": 5,
+          "groupWithOthers": true,
+          "groupWithAll": false
+        }
+      },
+      {
+        "type": "correlation_matrix",
+        "metric": "PEARSON",
+        "columns": [
+          {
+            "name": "YearMade",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "SalePrice",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "SalesID",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "MachineID",
+            "type": "CONTINUOUS"
+          }
+        ]
+      },
+      {
+        "type": "fit_distribution",
+        "distributions": [
+          {
+            "distribution": {
+              "type": "normal_mixture",
+              "nbComponents": 2
+            }
+          },
+          {
+            "distribution": {
+              "type": "normal_mixture",
+              "nbComponents": 4
+            }
+          },
+          {
+            "distribution": {
+              "type": "normal_mixture",
+              "nbComponents": 8
+            }
+          }
+        ],
+        "column": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        }
+      },
+      {
+        "type": "univariate_header",
+        "variables": [
+          {
+            "name": "ProductGroup",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Tip_Control",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "fiSecondaryDesc",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "ProductSize",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "SalePrice",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "MachineID",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "showHistogram": true,
+        "showQuantile": true,
+        "showFrequencyTable": true,
+        "showSummary": true,
+        "showBoxPlot": true,
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "ProductGroup",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 4,
+                "column": {
+                  "name": "ProductGroup",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "ProductGroup",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": true,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": true,
+                "showSkewness": true,
+                "showKurtosis": true,
+                "showSem": true,
+                "showCompleteCount": true,
+                "showNbEmpty": true,
+                "showZeroCount": true,
+                "showZeroRatio": true,
+                "showNonZeroRatio": true,
+                "showIQR": true,
+                "showDistinctCount": true,
+                "showNbNonEmpty": true,
+                "showMixMax": true,
+                "showRange": true,
+                "showMode": true,
+                "column": {
+                  "name": "ProductGroup",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Tip_Control",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 9,
+                "column": {
+                  "name": "Tip_Control",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Tip_Control",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": true,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": true,
+                "showSkewness": true,
+                "showKurtosis": true,
+                "showSem": true,
+                "showCompleteCount": true,
+                "showNbEmpty": true,
+                "showZeroCount": true,
+                "showZeroRatio": true,
+                "showNonZeroRatio": true,
+                "showIQR": true,
+                "showDistinctCount": true,
+                "showNbNonEmpty": true,
+                "showMixMax": true,
+                "showRange": true,
+                "showMode": true,
+                "column": {
+                  "name": "Tip_Control",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "fiSecondaryDesc",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 3,
+                "column": {
+                  "name": "fiSecondaryDesc",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "fiSecondaryDesc",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": true,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": true,
+                "showSkewness": true,
+                "showKurtosis": true,
+                "showSem": true,
+                "showCompleteCount": true,
+                "showNbEmpty": true,
+                "showZeroCount": true,
+                "showZeroRatio": true,
+                "showNonZeroRatio": true,
+                "showIQR": true,
+                "showDistinctCount": true,
+                "showNbNonEmpty": true,
+                "showMixMax": true,
+                "showRange": true,
+                "showMode": true,
+                "column": {
+                  "name": "fiSecondaryDesc",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "ProductSize",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 3,
+                "column": {
+                  "name": "ProductSize",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "ProductSize",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": true,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": true,
+                "showSkewness": true,
+                "showKurtosis": true,
+                "showSem": true,
+                "showCompleteCount": true,
+                "showNbEmpty": true,
+                "showZeroCount": true,
+                "showZeroRatio": true,
+                "showNonZeroRatio": true,
+                "showIQR": true,
+                "showDistinctCount": true,
+                "showNbNonEmpty": true,
+                "showMixMax": true,
+                "showRange": true,
+                "showMode": true,
+                "column": {
+                  "name": "ProductSize",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "SalePrice",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "column": {
+                  "name": "SalePrice",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "column": {
+                  "name": "SalePrice",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": true,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": true,
+                "showSkewness": true,
+                "showKurtosis": true,
+                "showSem": true,
+                "showCompleteCount": true,
+                "showNbEmpty": true,
+                "showZeroCount": true,
+                "showZeroRatio": true,
+                "showNonZeroRatio": true,
+                "showIQR": true,
+                "showDistinctCount": true,
+                "showNbNonEmpty": true,
+                "showMixMax": true,
+                "showRange": true,
+                "showMode": true,
+                "column": {
+                  "name": "SalePrice",
+                  "type": "CONTINUOUS"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "MachineID",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "column": {
+                  "name": "MachineID",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "column": {
+                  "name": "MachineID",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": true,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": true,
+                "showSkewness": true,
+                "showKurtosis": true,
+                "showSem": true,
+                "showCompleteCount": true,
+                "showNbEmpty": true,
+                "showZeroCount": true,
+                "showZeroRatio": true,
+                "showNonZeroRatio": true,
+                "showIQR": true,
+                "showDistinctCount": true,
+                "showNbNonEmpty": true,
+                "showMixMax": true,
+                "showRange": true,
+                "showMode": true,
+                "column": {
+                  "name": "MachineID",
+                  "type": "CONTINUOUS"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "pairwise_ttest",
+        "adjustmentMethod": "HOLM_BONFERRONI",
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Pad_Type",
+          "type": "CATEGORICAL"
+        }
+      },
+      {
+        "type": "pairwise_mood",
+        "adjustmentMethod": "HOLM_BONFERRONI",
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "SalePrice",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Pad_Type",
+          "type": "CATEGORICAL"
+        }
+      },
+      {
+        "type": "mosaic_plot",
+        "maxValues": 5,
+        "groupOthers": true,
+        "xColumn": {
+          "name": "ProductGroup",
+          "type": "CATEGORICAL"
+        },
+        "yColumn": {
+          "name": "YearMade",
+          "type": "CATEGORICAL"
+        },
+        "splitBy": {
+          "groupingColumn": "Enclosure",
+          "maxGroupingValues": 5,
+          "groupWithOthers": true,
+          "groupWithAll": true
+        }
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "MachineHoursCurrentMeter",
+          "type": "CONTINUOUS"
+        },
+        "xColumns": [
+          {
+            "name": "SalePrice",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "ModelID",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "datasource",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "YearMade",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "UsageBand",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": true,
+        "showFrequencyTable": false,
+        "showBoxPlot": true,
+        "showSummary": false,
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "SalePrice",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "SalePrice",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "SalePrice",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "SalePrice",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "scatter_plot",
+                "xColumn": {
+                  "name": "SalePrice",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "ModelID",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "ModelID",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "ModelID",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "ModelID",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "scatter_plot",
+                "xColumn": {
+                  "name": "ModelID",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "datasource",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "datasource",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "datasource",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "datasource",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "YearMade",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "YearMade",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "YearMade",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "YearMade",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "UsageBand",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "MachineHoursCurrentMeter",
+                  "type": "CONTINUOUS"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "univariate_header",
+        "variables": [
+          {
+            "name": "SalePrice",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "showHistogram": false,
+        "showQuantile": true,
+        "showFrequencyTable": false,
+        "showSummary": false,
+        "showBoxPlot": false,
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "SalePrice",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "column": {
+                  "name": "SalePrice",
+                  "type": "CONTINUOUS"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "versionTag": {
+    "versionNumber": 1743,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1565972745453
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1562079626290
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
