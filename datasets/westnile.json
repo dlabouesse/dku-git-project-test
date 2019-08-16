@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1565971683395
+    "lastModifiedOn": 1565971841524
   },
   "creationTag": {
     "versionNumber": 0,
@@ -126,7 +126,7 @@
       },
       {
         "name": "NumMosquitos",
-        "type": "string"
+        "type": "int"
       },
       {
         "name": "WnvPresent",
