@@ -700,42 +700,58 @@
       {
         "type": "bivariate_header",
         "yColumn": {
-          "name": "MachineHoursCurrentMeter",
-          "type": "CONTINUOUS"
+          "name": "UsageBand",
+          "type": "CATEGORICAL"
         },
         "xColumns": [
           {
-            "name": "SalePrice",
+            "name": "MachineID",
             "type": "CONTINUOUS"
           },
           {
-            "name": "ModelID",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "datasource",
+            "name": "Thumb",
             "type": "CATEGORICAL"
           },
           {
-            "name": "YearMade",
+            "name": "Pattern_Changer",
             "type": "CATEGORICAL"
           },
           {
-            "name": "UsageBand",
+            "name": "Grouser_Type",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Backhoe_Mounting",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Blade_Type",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Travel_Controls",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Differential_Type",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Steering_Controls",
             "type": "CATEGORICAL"
           }
         ],
         "showMosaicPlot": true,
         "showHistogram": true,
-        "showScatterPlot": true,
-        "showFrequencyTable": false,
+        "showScatterPlot": false,
+        "showFrequencyTable": true,
         "showBoxPlot": true,
-        "showSummary": false,
+        "showSummary": true,
         "cards": [
           {
             "type": "column_card",
             "column": {
-              "name": "SalePrice",
+              "name": "MachineID",
               "type": "CONTINUOUS"
             },
             "cards": [
@@ -744,12 +760,12 @@
                 "maxValues": 5,
                 "groupOthers": true,
                 "xColumn": {
-                  "name": "SalePrice",
+                  "name": "MachineID",
                   "type": "CONTINUOUS"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               },
               {
@@ -757,12 +773,12 @@
                 "maxValues": 5,
                 "groupOthers": true,
                 "xColumn": {
-                  "name": "SalePrice",
+                  "name": "MachineID",
                   "type": "CONTINUOUS"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               },
               {
@@ -770,23 +786,44 @@
                 "maxValues": 5,
                 "groupOthers": true,
                 "xColumn": {
-                  "name": "SalePrice",
+                  "name": "MachineID",
                   "type": "CONTINUOUS"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               },
               {
-                "type": "scatter_plot",
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
                 "xColumn": {
-                  "name": "SalePrice",
+                  "name": "MachineID",
                   "type": "CONTINUOUS"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "MachineID",
                   "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               }
             ]
@@ -794,66 +831,7 @@
           {
             "type": "column_card",
             "column": {
-              "name": "ModelID",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "bivariate_histogram",
-                "maxValues": 5,
-                "groupOthers": true,
-                "xColumn": {
-                  "name": "ModelID",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
-                }
-              },
-              {
-                "type": "mosaic_plot",
-                "maxValues": 5,
-                "groupOthers": true,
-                "xColumn": {
-                  "name": "ModelID",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
-                }
-              },
-              {
-                "type": "bivariate_box_plot",
-                "maxValues": 5,
-                "groupOthers": true,
-                "xColumn": {
-                  "name": "ModelID",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
-                }
-              },
-              {
-                "type": "scatter_plot",
-                "xColumn": {
-                  "name": "ModelID",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
-                }
-              }
-            ]
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "datasource",
+              "name": "Thumb",
               "type": "CATEGORICAL"
             },
             "cards": [
@@ -862,12 +840,12 @@
                 "maxValues": 5,
                 "groupOthers": true,
                 "xColumn": {
-                  "name": "datasource",
+                  "name": "Thumb",
                   "type": "CATEGORICAL"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               },
               {
@@ -875,25 +853,44 @@
                 "maxValues": 5,
                 "groupOthers": true,
                 "xColumn": {
-                  "name": "datasource",
+                  "name": "Thumb",
                   "type": "CATEGORICAL"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               },
               {
-                "type": "bivariate_box_plot",
-                "maxValues": 5,
-                "groupOthers": true,
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
                 "xColumn": {
-                  "name": "datasource",
+                  "name": "Thumb",
                   "type": "CATEGORICAL"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Thumb",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               }
             ]
@@ -901,7 +898,7 @@
           {
             "type": "column_card",
             "column": {
-              "name": "YearMade",
+              "name": "Pattern_Changer",
               "type": "CATEGORICAL"
             },
             "cards": [
@@ -910,12 +907,12 @@
                 "maxValues": 5,
                 "groupOthers": true,
                 "xColumn": {
-                  "name": "YearMade",
+                  "name": "Pattern_Changer",
                   "type": "CATEGORICAL"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               },
               {
@@ -923,25 +920,44 @@
                 "maxValues": 5,
                 "groupOthers": true,
                 "xColumn": {
-                  "name": "YearMade",
+                  "name": "Pattern_Changer",
                   "type": "CATEGORICAL"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               },
               {
-                "type": "bivariate_box_plot",
-                "maxValues": 5,
-                "groupOthers": true,
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
                 "xColumn": {
-                  "name": "YearMade",
+                  "name": "Pattern_Changer",
                   "type": "CATEGORICAL"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Pattern_Changer",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               }
             ]
@@ -949,7 +965,7 @@
           {
             "type": "column_card",
             "column": {
-              "name": "UsageBand",
+              "name": "Grouser_Type",
               "type": "CATEGORICAL"
             },
             "cards": [
@@ -958,12 +974,12 @@
                 "maxValues": 5,
                 "groupOthers": true,
                 "xColumn": {
-                  "name": "UsageBand",
+                  "name": "Grouser_Type",
                   "type": "CATEGORICAL"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               },
               {
@@ -971,30 +987,390 @@
                 "maxValues": 5,
                 "groupOthers": true,
                 "xColumn": {
-                  "name": "UsageBand",
+                  "name": "Grouser_Type",
                   "type": "CATEGORICAL"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               },
               {
-                "type": "bivariate_box_plot",
-                "maxValues": 5,
-                "groupOthers": true,
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
                 "xColumn": {
-                  "name": "UsageBand",
+                  "name": "Grouser_Type",
                   "type": "CATEGORICAL"
                 },
                 "yColumn": {
-                  "name": "MachineHoursCurrentMeter",
-                  "type": "CONTINUOUS"
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Grouser_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Backhoe_Mounting",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Backhoe_Mounting",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Backhoe_Mounting",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Backhoe_Mounting",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Backhoe_Mounting",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Blade_Type",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Blade_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Blade_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Blade_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Blade_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Travel_Controls",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Travel_Controls",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Travel_Controls",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Travel_Controls",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Travel_Controls",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Differential_Type",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Differential_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Differential_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Differential_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Differential_Type",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Steering_Controls",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Steering_Controls",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Steering_Controls",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Steering_Controls",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Steering_Controls",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "UsageBand",
+                  "type": "CATEGORICAL"
                 }
               }
             ]
           }
-        ]
+        ],
+        "splitBy": {
+          "groupingColumn": "ProductSize",
+          "maxGroupingValues": 5,
+          "groupWithOthers": true,
+          "groupWithAll": true
+        }
       },
       {
         "type": "univariate_header",
@@ -1032,11 +1408,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 1752,
+    "versionNumber": 1758,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1565973566462
+    "lastModifiedOn": 1565973771132
   },
   "creationTag": {
     "versionNumber": 0,
