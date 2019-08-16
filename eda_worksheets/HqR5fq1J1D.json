@@ -871,16 +871,22 @@
               }
             ]
           }
-        ]
+        ],
+        "splitBy": {
+          "groupingColumn": "Species",
+          "maxGroupingValues": 5,
+          "groupWithOthers": true,
+          "groupWithAll": true
+        }
       }
     ]
   },
   "versionTag": {
-    "versionNumber": 79,
+    "versionNumber": 80,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1565972271815
+    "lastModifiedOn": 1565972357316
   },
   "creationTag": {
     "versionNumber": 0,
