@@ -274,15 +274,613 @@
           "groupWithOthers": true,
           "groupWithAll": true
         }
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "Latitude",
+          "type": "CATEGORICAL"
+        },
+        "xColumns": [
+          {
+            "name": "Date",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Address",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Species",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Block",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Street",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Longitude",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "AddressAccuracy",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "NumMosquitos",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": false,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Date",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Address",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Address",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Address",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Address",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Address",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Species",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Species",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Species",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Species",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Species",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Block",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Block",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Block",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Block",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Block",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Street",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Street",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Street",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Street",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Street",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Longitude",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Longitude",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Longitude",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Longitude",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Longitude",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "AddressAccuracy",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "AddressAccuracy",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "AddressAccuracy",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "AddressAccuracy",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "AddressAccuracy",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "NumMosquitos",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "NumMosquitos",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "NumMosquitos",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "NumMosquitos",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "NumMosquitos",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "NumMosquitos",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   "versionTag": {
-    "versionNumber": 78,
+    "versionNumber": 79,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1565972013606
+    "lastModifiedOn": 1565972271815
   },
   "creationTag": {
     "versionNumber": 0,
