@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1565972936699
+    "lastModifiedOn": 1565972965839
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,215 +85,215 @@
   "schema": {
     "columns": [
       {
-        "name": "col_0",
+        "name": "SalesID",
+        "type": "bigint"
+      },
+      {
+        "name": "SalePrice",
+        "type": "double"
+      },
+      {
+        "name": "MachineID",
+        "type": "double"
+      },
+      {
+        "name": "ModelID",
+        "type": "double"
+      },
+      {
+        "name": "datasource",
+        "type": "bigint"
+      },
+      {
+        "name": "auctioneerID",
+        "type": "double"
+      },
+      {
+        "name": "YearMade",
+        "type": "bigint"
+      },
+      {
+        "name": "MachineHoursCurrentMeter",
+        "type": "double"
+      },
+      {
+        "name": "UsageBand",
         "type": "string"
       },
       {
-        "name": "col_1",
+        "name": "saledate",
         "type": "string"
       },
       {
-        "name": "col_2",
+        "name": "fiModelDesc",
         "type": "string"
       },
       {
-        "name": "col_3",
+        "name": "fiBaseModel",
         "type": "string"
       },
       {
-        "name": "col_4",
+        "name": "fiSecondaryDesc",
         "type": "string"
       },
       {
-        "name": "col_5",
+        "name": "fiModelSeries",
         "type": "string"
       },
       {
-        "name": "col_6",
+        "name": "fiModelDescriptor",
         "type": "string"
       },
       {
-        "name": "col_7",
+        "name": "ProductSize",
         "type": "string"
       },
       {
-        "name": "col_8",
+        "name": "fiProductClassDesc2",
         "type": "string"
       },
       {
-        "name": "col_9",
+        "name": "state",
         "type": "string"
       },
       {
-        "name": "col_10",
+        "name": "ProductGroup",
         "type": "string"
       },
       {
-        "name": "col_11",
+        "name": "ProductGroupDesc",
         "type": "string"
       },
       {
-        "name": "col_12",
+        "name": "Drive_System",
         "type": "string"
       },
       {
-        "name": "col_13",
+        "name": "Enclosure",
         "type": "string"
       },
       {
-        "name": "col_14",
+        "name": "Forks",
         "type": "string"
       },
       {
-        "name": "col_15",
+        "name": "Pad_Type",
         "type": "string"
       },
       {
-        "name": "col_16",
+        "name": "Ride_Control",
         "type": "string"
       },
       {
-        "name": "col_17",
+        "name": "Stick",
         "type": "string"
       },
       {
-        "name": "col_18",
+        "name": "Transmission",
         "type": "string"
       },
       {
-        "name": "col_19",
+        "name": "Turbocharged",
         "type": "string"
       },
       {
-        "name": "col_20",
+        "name": "Blade_Extension",
         "type": "string"
       },
       {
-        "name": "col_21",
+        "name": "Blade_Width",
         "type": "string"
       },
       {
-        "name": "col_22",
+        "name": "Enclosure_Type",
         "type": "string"
       },
       {
-        "name": "col_23",
+        "name": "Engine_Horsepower",
         "type": "string"
       },
       {
-        "name": "col_24",
+        "name": "Hydraulics",
         "type": "string"
       },
       {
-        "name": "col_25",
+        "name": "Pushblock",
         "type": "string"
       },
       {
-        "name": "col_26",
+        "name": "Ripper",
         "type": "string"
       },
       {
-        "name": "col_27",
+        "name": "Scarifier",
         "type": "string"
       },
       {
-        "name": "col_28",
+        "name": "Tip_Control",
         "type": "string"
       },
       {
-        "name": "col_29",
+        "name": "Tire_Size",
         "type": "string"
       },
       {
-        "name": "col_30",
+        "name": "Coupler",
         "type": "string"
       },
       {
-        "name": "col_31",
+        "name": "Coupler_System",
         "type": "string"
       },
       {
-        "name": "col_32",
+        "name": "Grouser_Tracks",
         "type": "string"
       },
       {
-        "name": "col_33",
+        "name": "Hydraulics_Flow",
         "type": "string"
       },
       {
-        "name": "col_34",
+        "name": "Track_Type",
         "type": "string"
       },
       {
-        "name": "col_35",
+        "name": "Undercarriage_Pad_Width",
         "type": "string"
       },
       {
-        "name": "col_36",
+        "name": "Stick_Length",
         "type": "string"
       },
       {
-        "name": "col_37",
+        "name": "Thumb",
         "type": "string"
       },
       {
-        "name": "col_38",
+        "name": "Pattern_Changer",
         "type": "string"
       },
       {
-        "name": "col_39",
+        "name": "Grouser_Type",
         "type": "string"
       },
       {
-        "name": "col_40",
+        "name": "Backhoe_Mounting",
         "type": "string"
       },
       {
-        "name": "col_41",
+        "name": "Blade_Type",
         "type": "string"
       },
       {
-        "name": "col_42",
+        "name": "Travel_Controls",
         "type": "string"
       },
       {
-        "name": "col_43",
+        "name": "Differential_Type",
         "type": "string"
       },
       {
-        "name": "col_44",
-        "type": "string"
-      },
-      {
-        "name": "col_45",
-        "type": "string"
-      },
-      {
-        "name": "col_46",
-        "type": "string"
-      },
-      {
-        "name": "col_47",
-        "type": "string"
-      },
-      {
-        "name": "col_48",
-        "type": "string"
-      },
-      {
-        "name": "col_49",
-        "type": "string"
-      },
-      {
-        "name": "col_50",
-        "type": "string"
-      },
-      {
-        "name": "col_51",
-        "type": "string"
-      },
-      {
-        "name": "col_52",
+        "name": "Steering_Controls",
         "type": "string"
       }
     ],
