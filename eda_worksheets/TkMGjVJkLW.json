@@ -743,7 +743,7 @@
           }
         ],
         "splitBy": {
-          "groupingColumn": "Species",
+          "groupingColumn": "Address",
           "maxGroupingValues": 5,
           "groupWithOthers": true,
           "groupWithAll": true
@@ -1577,11 +1577,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1566809362582
+    "lastModifiedOn": 1566835728503
   },
   "creationTag": {
     "versionNumber": 0,
