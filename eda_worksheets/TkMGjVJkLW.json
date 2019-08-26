@@ -67,11 +67,11 @@
           },
           {
             "name": "Latitude",
-            "type": "CATEGORICAL"
+            "type": "CONTINUOUS"
           },
           {
             "name": "Longitude",
-            "type": "CATEGORICAL"
+            "type": "CONTINUOUS"
           },
           {
             "name": "AddressAccuracy",
@@ -469,23 +469,25 @@
             "type": "column_card",
             "column": {
               "name": "Latitude",
-              "type": "CATEGORICAL"
+              "type": "CONTINUOUS"
             },
             "cards": [
               {
-                "type": "categorical_histogram",
-                "maxValues": 10,
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
                 "column": {
                   "name": "Latitude",
-                  "type": "CATEGORICAL"
+                  "type": "CONTINUOUS"
                 }
               },
               {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
                 "column": {
                   "name": "Latitude",
-                  "type": "CATEGORICAL"
+                  "type": "CONTINUOUS"
                 }
               },
               {
@@ -514,7 +516,7 @@
                 "showMode": true,
                 "column": {
                   "name": "Latitude",
-                  "type": "CATEGORICAL"
+                  "type": "CONTINUOUS"
                 }
               }
             ]
@@ -523,23 +525,25 @@
             "type": "column_card",
             "column": {
               "name": "Longitude",
-              "type": "CATEGORICAL"
+              "type": "CONTINUOUS"
             },
             "cards": [
               {
-                "type": "categorical_histogram",
-                "maxValues": 10,
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
                 "column": {
                   "name": "Longitude",
-                  "type": "CATEGORICAL"
+                  "type": "CONTINUOUS"
                 }
               },
               {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
                 "column": {
                   "name": "Longitude",
-                  "type": "CATEGORICAL"
+                  "type": "CONTINUOUS"
                 }
               },
               {
@@ -568,7 +572,7 @@
                 "showMode": true,
                 "column": {
                   "name": "Longitude",
-                  "type": "CATEGORICAL"
+                  "type": "CONTINUOUS"
                 }
               }
             ]
@@ -1567,11 +1571,11 @@
     ]
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1566809015468
+    "lastModifiedOn": 1566809120639
   },
   "creationTag": {
     "versionNumber": 0,
