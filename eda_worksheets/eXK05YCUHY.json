@@ -38,15 +38,71 @@
         "showBoxPlot": false,
         "xColumns": [],
         "cards": []
+      },
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": false,
+        "showFrequencyTable": false,
+        "showSummary": false,
+        "showBoxPlot": false,
+        "xColumns": [
+          {
+            "name": "SalePrice",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "MachineID",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "SalePrice",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": false,
+                "showHistogram": true,
+                "column": {
+                  "name": "SalePrice",
+                  "type": "CONTINUOUS"
+                }
+              }
+            ]
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "MachineID",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": false,
+                "showHistogram": true,
+                "column": {
+                  "name": "MachineID",
+                  "type": "CONTINUOUS"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1566808544264
+    "lastModifiedOn": 1566834541315
   },
   "creationTag": {
     "versionNumber": 0,
