@@ -1549,15 +1549,29 @@
             ]
           }
         ]
+      },
+      {
+        "type": "chi2_independence_test",
+        "maxValuesX": 5,
+        "maxValuesY": 5,
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "Species",
+          "type": "CATEGORICAL"
+        },
+        "yColumn": {
+          "name": "WnvPresent",
+          "type": "CATEGORICAL"
+        }
       }
     ]
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1566808887497
+    "lastModifiedOn": 1566809015468
   },
   "creationTag": {
     "versionNumber": 0,
