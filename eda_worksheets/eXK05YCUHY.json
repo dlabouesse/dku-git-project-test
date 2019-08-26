@@ -94,15 +94,67 @@
             ]
           }
         ]
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "fiProductClassDesc2",
+          "type": "CATEGORICAL"
+        },
+        "showMosaicPlot": false,
+        "showHistogram": false,
+        "showScatterPlot": false,
+        "showFrequencyTable": true,
+        "showBoxPlot": false,
+        "showSummary": false,
+        "xColumns": [
+          {
+            "name": "fiBaseModel",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "fiBaseModel",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "fiBaseModel",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "fiProductClassDesc2",
+                  "type": "CATEGORICAL"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "fit_distribution",
+        "distributions": [],
+        "column": {
+          "name": "SalesID",
+          "type": "CONTINUOUS"
+        }
       }
     ]
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1566834541315
+    "lastModifiedOn": 1566834737176
   },
   "creationTag": {
     "versionNumber": 0,
