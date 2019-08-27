@@ -6,7 +6,12 @@
     "engineParams": {
       "spark": {
         "readParams": {
-          "map": {}
+          "map": {
+            "westnile_copy_copy": {
+              "repartition": 10,
+              "cache": false
+            }
+          }
         },
         "useGlobalMetastore": false,
         "useNativeProcessors": true,
@@ -63,11 +68,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1566895423057
+    "lastModifiedOn": 1566895426051
   },
   "creationTag": {
     "versionNumber": 0,
