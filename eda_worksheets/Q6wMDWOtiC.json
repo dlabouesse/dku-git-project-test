@@ -1110,16 +1110,31 @@
         "xColumns": [],
         "cards": [],
         "id": "l4UqEfn"
+      },
+      {
+        "type": "chi2_independence_test",
+        "maxValuesX": 5,
+        "maxValuesY": 3,
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "saledate",
+          "type": "CATEGORICAL"
+        },
+        "yColumn": {
+          "name": "fiSecondaryDesc",
+          "type": "CATEGORICAL"
+        },
+        "id": "e2pdVNh"
       }
     ],
     "id": "8YPL2qO"
   },
   "versionTag": {
-    "versionNumber": 1766,
+    "versionNumber": 1767,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1566985308585
+    "lastModifiedOn": 1566991305855
   },
   "creationTag": {
     "versionNumber": 0,
