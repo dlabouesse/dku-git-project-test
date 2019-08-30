@@ -36,14 +36,320 @@
         "showFrequencyTable": true,
         "showSummary": true,
         "showBoxPlot": true,
-        "xColumns": [],
-        "cards": [],
-        "splitBy": {
-          "groupingColumn": "Species",
-          "maxGroupingValues": 5,
-          "groupWithOthers": true,
-          "groupWithAll": true
-        },
+        "xColumns": [
+          {
+            "name": "Date",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Address",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Species",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Block",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Street",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Date",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "column": {
+                  "name": "Date",
+                  "type": "CATEGORICAL"
+                },
+                "id": "wT8rV8j"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "Date",
+                  "type": "CATEGORICAL"
+                },
+                "id": "5vx647b"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Date",
+                  "type": "CATEGORICAL"
+                },
+                "id": "nUB6F4F"
+              }
+            ],
+            "id": "pJ1RcoV"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Address",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "column": {
+                  "name": "Address",
+                  "type": "CATEGORICAL"
+                },
+                "id": "WLorFMG"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "Address",
+                  "type": "CATEGORICAL"
+                },
+                "id": "EPwKcSn"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Address",
+                  "type": "CATEGORICAL"
+                },
+                "id": "NrIZ80I"
+              }
+            ],
+            "id": "u69cw7S"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Species",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "column": {
+                  "name": "Species",
+                  "type": "CATEGORICAL"
+                },
+                "id": "cQ9SIVm"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "Species",
+                  "type": "CATEGORICAL"
+                },
+                "id": "rQZFnew"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Species",
+                  "type": "CATEGORICAL"
+                },
+                "id": "yGswnDz"
+              }
+            ],
+            "id": "AB7NkDe"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Block",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "column": {
+                  "name": "Block",
+                  "type": "CATEGORICAL"
+                },
+                "id": "fCXLnRx"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "Block",
+                  "type": "CATEGORICAL"
+                },
+                "id": "hhzWSR6"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Block",
+                  "type": "CATEGORICAL"
+                },
+                "id": "5v5v9VQ"
+              }
+            ],
+            "id": "Hxm1mhn"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Street",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "column": {
+                  "name": "Street",
+                  "type": "CATEGORICAL"
+                },
+                "id": "oOi5XzK"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "Street",
+                  "type": "CATEGORICAL"
+                },
+                "id": "vON0oNq"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Street",
+                  "type": "CATEGORICAL"
+                },
+                "id": "G3urHEG"
+              }
+            ],
+            "id": "tSQGk9Z"
+          }
+        ],
         "id": "4vg35CP"
       },
       {
@@ -696,11 +1002,11 @@
     "id": "3xsm8eJ"
   },
   "versionTag": {
-    "versionNumber": 86,
+    "versionNumber": 88,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567189141135
+    "lastModifiedOn": 1567189242402
   },
   "creationTag": {
     "versionNumber": 0,
