@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567187273964
+    "lastModifiedOn": 1567187296616
   },
   "creationTag": {
     "versionNumber": 0,
@@ -100,7 +100,7 @@
       },
       {
         "name": "Block",
-        "type": "string"
+        "type": "int"
       },
       {
         "name": "Street",
