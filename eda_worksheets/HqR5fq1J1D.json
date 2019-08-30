@@ -43,7 +43,8 @@
           "maxGroupingValues": 5,
           "groupWithOthers": true,
           "groupWithAll": true
-        }
+        },
+        "id": "4vg35CP"
       },
       {
         "type": "bivariate_header",
@@ -110,7 +111,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "nbk6O0i"
               },
               {
                 "type": "mosaic_plot",
@@ -123,21 +125,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
-              },
-              {
-                "type": "bivariate_frequency_table",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthers": true,
-                "xColumn": {
-                  "name": "Date",
-                  "type": "CATEGORICAL"
                 },
-                "yColumn": {
-                  "name": "Latitude",
-                  "type": "CATEGORICAL"
-                }
+                "id": "8P21rwT"
               },
               {
                 "type": "bivariate_summary",
@@ -155,9 +144,26 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "1DqPaeK"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Date",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                },
+                "id": "QlFGJqQ"
               }
-            ]
+            ],
+            "id": "90nHSDP"
           },
           {
             "type": "column_card",
@@ -177,7 +183,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "wj6Rln3"
               },
               {
                 "type": "mosaic_plot",
@@ -190,21 +197,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
-              },
-              {
-                "type": "bivariate_frequency_table",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthers": true,
-                "xColumn": {
-                  "name": "Address",
-                  "type": "CATEGORICAL"
                 },
-                "yColumn": {
-                  "name": "Latitude",
-                  "type": "CATEGORICAL"
-                }
+                "id": "a2hOJRQ"
               },
               {
                 "type": "bivariate_summary",
@@ -222,9 +216,26 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "BlIYm7Y"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Address",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                },
+                "id": "DOQaDV6"
               }
-            ]
+            ],
+            "id": "EarpbCH"
           },
           {
             "type": "column_card",
@@ -244,7 +255,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "wY1w4uV"
               },
               {
                 "type": "mosaic_plot",
@@ -257,21 +269,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
-              },
-              {
-                "type": "bivariate_frequency_table",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthers": true,
-                "xColumn": {
-                  "name": "Species",
-                  "type": "CATEGORICAL"
                 },
-                "yColumn": {
-                  "name": "Latitude",
-                  "type": "CATEGORICAL"
-                }
+                "id": "jI0BciQ"
               },
               {
                 "type": "bivariate_summary",
@@ -289,9 +288,26 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "cLqzu4l"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Species",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                },
+                "id": "UFOCNoI"
               }
-            ]
+            ],
+            "id": "apu6ZuZ"
           },
           {
             "type": "column_card",
@@ -311,7 +327,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "ALJQSod"
               },
               {
                 "type": "mosaic_plot",
@@ -324,21 +341,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
-              },
-              {
-                "type": "bivariate_frequency_table",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthers": true,
-                "xColumn": {
-                  "name": "Block",
-                  "type": "CATEGORICAL"
                 },
-                "yColumn": {
-                  "name": "Latitude",
-                  "type": "CATEGORICAL"
-                }
+                "id": "3twTo44"
               },
               {
                 "type": "bivariate_summary",
@@ -356,9 +360,26 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "8fuANQK"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Block",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                },
+                "id": "i205xzP"
               }
-            ]
+            ],
+            "id": "6FuftM9"
           },
           {
             "type": "column_card",
@@ -378,7 +399,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "TgelPRi"
               },
               {
                 "type": "mosaic_plot",
@@ -391,21 +413,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
-              },
-              {
-                "type": "bivariate_frequency_table",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthers": true,
-                "xColumn": {
-                  "name": "Street",
-                  "type": "CATEGORICAL"
                 },
-                "yColumn": {
-                  "name": "Latitude",
-                  "type": "CATEGORICAL"
-                }
+                "id": "bsUQktE"
               },
               {
                 "type": "bivariate_summary",
@@ -423,9 +432,26 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "zcVJBm0"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Street",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                },
+                "id": "kSGjLdj"
               }
-            ]
+            ],
+            "id": "tnufpUB"
           },
           {
             "type": "column_card",
@@ -445,7 +471,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "gigMkHZ"
               },
               {
                 "type": "mosaic_plot",
@@ -458,21 +485,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
-              },
-              {
-                "type": "bivariate_frequency_table",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthers": true,
-                "xColumn": {
-                  "name": "Longitude",
-                  "type": "CATEGORICAL"
                 },
-                "yColumn": {
-                  "name": "Latitude",
-                  "type": "CATEGORICAL"
-                }
+                "id": "1nYNx4L"
               },
               {
                 "type": "bivariate_summary",
@@ -490,9 +504,26 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "nxsnHxD"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "Longitude",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                },
+                "id": "4ZuOHmP"
               }
-            ]
+            ],
+            "id": "qwgKIh9"
           },
           {
             "type": "column_card",
@@ -512,7 +543,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "FdiGQR7"
               },
               {
                 "type": "mosaic_plot",
@@ -525,21 +557,8 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
-              },
-              {
-                "type": "bivariate_frequency_table",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthers": true,
-                "xColumn": {
-                  "name": "AddressAccuracy",
-                  "type": "CATEGORICAL"
                 },
-                "yColumn": {
-                  "name": "Latitude",
-                  "type": "CATEGORICAL"
-                }
+                "id": "OrJmQFf"
               },
               {
                 "type": "bivariate_summary",
@@ -557,9 +576,26 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "iQ04Viq"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "AddressAccuracy",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                },
+                "id": "zrbtmJj"
               }
-            ]
+            ],
+            "id": "HzLAjmD"
           },
           {
             "type": "column_card",
@@ -568,32 +604,6 @@
               "type": "CONTINUOUS"
             },
             "cards": [
-              {
-                "type": "bivariate_histogram",
-                "maxValues": 5,
-                "groupOthers": true,
-                "xColumn": {
-                  "name": "NumMosquitos",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "Latitude",
-                  "type": "CATEGORICAL"
-                }
-              },
-              {
-                "type": "mosaic_plot",
-                "maxValues": 5,
-                "groupOthers": true,
-                "xColumn": {
-                  "name": "NumMosquitos",
-                  "type": "CONTINUOUS"
-                },
-                "yColumn": {
-                  "name": "Latitude",
-                  "type": "CATEGORICAL"
-                }
-              },
               {
                 "type": "bivariate_box_plot",
                 "maxValues": 5,
@@ -605,13 +615,13 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "83NAmRJ"
               },
               {
-                "type": "bivariate_frequency_table",
-                "maxValuesX": 5,
-                "maxValuesY": 5,
-                "groupWithOthers": true,
+                "type": "bivariate_histogram",
+                "maxValues": 5,
+                "groupOthers": true,
                 "xColumn": {
                   "name": "NumMosquitos",
                   "type": "CONTINUOUS"
@@ -619,7 +629,22 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "hLtHzZs"
+              },
+              {
+                "type": "mosaic_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "NumMosquitos",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                },
+                "id": "FqkwxzW"
               },
               {
                 "type": "bivariate_summary",
@@ -637,9 +662,26 @@
                 "yColumn": {
                   "name": "Latitude",
                   "type": "CATEGORICAL"
-                }
+                },
+                "id": "7r12qPE"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthers": true,
+                "xColumn": {
+                  "name": "NumMosquitos",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Latitude",
+                  "type": "CATEGORICAL"
+                },
+                "id": "FgKj42R"
               }
-            ]
+            ],
+            "id": "f1oDc0b"
           }
         ],
         "splitBy": {
@@ -647,16 +689,18 @@
           "maxGroupingValues": 5,
           "groupWithOthers": true,
           "groupWithAll": true
-        }
+        },
+        "id": "QUgpUbw"
       }
-    ]
+    ],
+    "id": "3xsm8eJ"
   },
   "versionTag": {
-    "versionNumber": 84,
+    "versionNumber": 85,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1566835673417
+    "lastModifiedOn": 1567188925824
   },
   "creationTag": {
     "versionNumber": 0,
