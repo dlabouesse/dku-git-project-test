@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567434135653
+    "lastModifiedOn": 1567434153879
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,15 +86,15 @@
     "columns": [
       {
         "name": "PassengerId",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Survived",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Pclass",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Name",
@@ -106,15 +106,15 @@
       },
       {
         "name": "Age",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "SibSp",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Parch",
-        "type": "string"
+        "type": "bigint"
       },
       {
         "name": "Ticket",
@@ -122,7 +122,7 @@
       },
       {
         "name": "Fare",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "Cabin",
