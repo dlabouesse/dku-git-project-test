@@ -991,7 +991,7 @@
           }
         ],
         "splitBy": {
-          "groupingColumn": "Species",
+          "groupingColumn": "Latitude",
           "maxGroupingValues": 5,
           "groupWithOthers": true,
           "groupWithAll": true
@@ -1002,11 +1002,11 @@
     "id": "3xsm8eJ"
   },
   "versionTag": {
-    "versionNumber": 93,
+    "versionNumber": 95,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567433388290
+    "lastModifiedOn": 1567433676598
   },
   "creationTag": {
     "versionNumber": 0,
