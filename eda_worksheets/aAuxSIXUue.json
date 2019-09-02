@@ -44,7 +44,7 @@
         "xColumns": [
           {
             "name": "Parch",
-            "type": "CONTINUOUS"
+            "type": "CATEGORICAL"
           },
           {
             "name": "Ticket",
@@ -68,7 +68,7 @@
             "type": "column_card",
             "column": {
               "name": "Parch",
-              "type": "CONTINUOUS"
+              "type": "CATEGORICAL"
             },
             "cards": [
               {
@@ -77,7 +77,7 @@
                 "groupOthers": true,
                 "xColumn": {
                   "name": "Parch",
-                  "type": "CONTINUOUS"
+                  "type": "CATEGORICAL"
                 },
                 "yColumn": {
                   "name": "Age",
@@ -96,7 +96,7 @@
                 "showCompleteCount": true,
                 "xColumn": {
                   "name": "Parch",
-                  "type": "CONTINUOUS"
+                  "type": "CATEGORICAL"
                 },
                 "yColumn": {
                   "name": "Age",
@@ -280,17 +280,23 @@
             "id": "Pt0jDy6"
           }
         ],
+        "splitBy": {
+          "groupingColumn": "Sex",
+          "maxGroupingValues": 5,
+          "groupWithOthers": true,
+          "groupWithAll": true
+        },
         "id": "kMYCNkS"
       }
     ],
     "id": "yrAXALU"
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567434199097
+    "lastModifiedOn": 1567434345771
   },
   "creationTag": {
     "versionNumber": 0,
