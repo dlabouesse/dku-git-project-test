@@ -193,16 +193,222 @@
           "groupWithAll": true
         },
         "id": "kMYCNkS"
+      },
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "Age",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": false,
+        "showHistogram": false,
+        "showScatterPlot": false,
+        "showFrequencyTable": false,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "Ticket",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Fare",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Cabin",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "Embarked",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Ticket",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Ticket",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "BULRL8z"
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Ticket",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "6sZe6Ua"
+              }
+            ],
+            "id": "rlRoMSh"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Fare",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Fare",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "kghuIot"
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Fare",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "N5yUn53"
+              }
+            ],
+            "id": "0t68xIH"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Cabin",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Cabin",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "9DjBZtP"
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Cabin",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "2Chrmu1"
+              }
+            ],
+            "id": "V1h24Oh"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Embarked",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "xColumn": {
+                  "name": "Embarked",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "CbGHtbh"
+              },
+              {
+                "type": "bivariate_summary",
+                "showSpearman": true,
+                "showPearson": true,
+                "showTotalCount": true,
+                "showCovariance": true,
+                "showKendallTau": true,
+                "showMutualInformation": true,
+                "showCompleteCount": true,
+                "xColumn": {
+                  "name": "Embarked",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "HRj8lFJ"
+              }
+            ],
+            "id": "pTnNPfA"
+          }
+        ],
+        "id": "8pNrwcT"
       }
     ],
     "id": "yrAXALU"
   },
   "versionTag": {
-    "versionNumber": 32,
+    "versionNumber": 41,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567434618955
+    "lastModifiedOn": 1567434934012
   },
   "creationTag": {
     "versionNumber": 0,
