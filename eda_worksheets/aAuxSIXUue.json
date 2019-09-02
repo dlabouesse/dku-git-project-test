@@ -43,14 +43,6 @@
         "showSummary": true,
         "xColumns": [
           {
-            "name": "Parch",
-            "type": "CATEGORICAL"
-          },
-          {
-            "name": "Ticket",
-            "type": "CATEGORICAL"
-          },
-          {
             "name": "Fare",
             "type": "CONTINUOUS"
           },
@@ -64,92 +56,6 @@
           }
         ],
         "cards": [
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Parch",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "bivariate_box_plot",
-                "maxValues": 5,
-                "groupOthers": true,
-                "xColumn": {
-                  "name": "Parch",
-                  "type": "CATEGORICAL"
-                },
-                "yColumn": {
-                  "name": "Age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "7287vX1"
-              },
-              {
-                "type": "bivariate_summary",
-                "showSpearman": true,
-                "showPearson": true,
-                "showTotalCount": true,
-                "showCovariance": true,
-                "showKendallTau": true,
-                "showMutualInformation": true,
-                "showCompleteCount": true,
-                "xColumn": {
-                  "name": "Parch",
-                  "type": "CATEGORICAL"
-                },
-                "yColumn": {
-                  "name": "Age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "yLz449W"
-              }
-            ],
-            "id": "Yni5oSE"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Ticket",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "bivariate_box_plot",
-                "maxValues": 5,
-                "groupOthers": true,
-                "xColumn": {
-                  "name": "Ticket",
-                  "type": "CATEGORICAL"
-                },
-                "yColumn": {
-                  "name": "Age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "xY4r2pO"
-              },
-              {
-                "type": "bivariate_summary",
-                "showSpearman": true,
-                "showPearson": true,
-                "showTotalCount": true,
-                "showCovariance": true,
-                "showKendallTau": true,
-                "showMutualInformation": true,
-                "showCompleteCount": true,
-                "xColumn": {
-                  "name": "Ticket",
-                  "type": "CATEGORICAL"
-                },
-                "yColumn": {
-                  "name": "Age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "i1vzquY"
-              }
-            ],
-            "id": "Um8rhqu"
-          },
           {
             "type": "column_card",
             "column": {
@@ -280,17 +186,23 @@
             "id": "Pt0jDy6"
           }
         ],
+        "splitBy": {
+          "groupingColumn": "Sex",
+          "maxGroupingValues": 5,
+          "groupWithOthers": true,
+          "groupWithAll": true
+        },
         "id": "kMYCNkS"
       }
     ],
     "id": "yrAXALU"
   },
   "versionTag": {
-    "versionNumber": 20,
+    "versionNumber": 32,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567434453960
+    "lastModifiedOn": 1567434618955
   },
   "creationTag": {
     "versionNumber": 0,
