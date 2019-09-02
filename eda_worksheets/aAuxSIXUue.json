@@ -280,23 +280,17 @@
             "id": "Pt0jDy6"
           }
         ],
-        "splitBy": {
-          "groupingColumn": "Sex",
-          "maxGroupingValues": 5,
-          "groupWithOthers": true,
-          "groupWithAll": true
-        },
         "id": "kMYCNkS"
       }
     ],
     "id": "yrAXALU"
   },
   "versionTag": {
-    "versionNumber": 17,
+    "versionNumber": 20,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567434345771
+    "lastModifiedOn": 1567434453960
   },
   "creationTag": {
     "versionNumber": 0,
