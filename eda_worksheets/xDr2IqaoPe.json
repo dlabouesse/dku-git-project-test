@@ -27,14 +27,16 @@
   "rootCard": {
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
-    "cards": []
+    "showConfidenceInterval": false,
+    "cards": [],
+    "id": "ybDz0hD"
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1565971798227
+    "lastModifiedOn": 1567502446335
   },
   "creationTag": {
     "versionNumber": 0,
