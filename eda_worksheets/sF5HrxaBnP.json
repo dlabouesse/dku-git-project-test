@@ -43,16 +43,27 @@
           "maxGroupingValues": 5,
           "groupWithOthers": true,
           "groupWithAll": true
-        }
+        },
+        "id": "jMpkkAE"
+      },
+      {
+        "type": "fit_distribution",
+        "distributions": [],
+        "column": {
+          "name": "SalesID",
+          "type": "CONTINUOUS"
+        },
+        "id": "bK9DPoY"
       }
-    ]
+    ],
+    "id": "G5LepMM"
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1566835659655
+    "lastModifiedOn": 1567694755845
   },
   "creationTag": {
     "versionNumber": 0,
