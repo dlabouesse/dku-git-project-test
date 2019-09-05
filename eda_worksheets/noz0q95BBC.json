@@ -1,0 +1,195 @@
+{
+  "dataSpec": {
+    "dataset": {
+      "projectKey": "EDA",
+      "id": "bulldozer_small_extract"
+    },
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": true,
+        "showFrequencyTable": true,
+        "showSummary": true,
+        "showBoxPlot": true,
+        "xColumns": [
+          {
+            "name": "SalesID",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "ModelID",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "SalesID",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "column": {
+                  "name": "SalesID",
+                  "type": "CONTINUOUS"
+                },
+                "id": "upoXrwX"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "SalesID",
+                  "type": "CONTINUOUS"
+                },
+                "id": "vJ9LBUp"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "SalesID",
+                  "type": "CONTINUOUS"
+                },
+                "id": "JcWzmnE"
+              }
+            ],
+            "id": "UsAC771"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "ModelID",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "column": {
+                  "name": "ModelID",
+                  "type": "CONTINUOUS"
+                },
+                "id": "QFtxCc8"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "ModelID",
+                  "type": "CONTINUOUS"
+                },
+                "id": "0Cxvprp"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "ModelID",
+                  "type": "CONTINUOUS"
+                },
+                "id": "nbn7q9C"
+              }
+            ],
+            "id": "ggshbq5"
+          }
+        ],
+        "id": "9o8m9GH"
+      }
+    ],
+    "id": "UQWW2Gl"
+  },
+  "versionTag": {
+    "versionNumber": 2,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1567695486068
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1567695477058
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
