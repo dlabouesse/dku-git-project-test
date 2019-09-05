@@ -997,16 +997,47 @@
           "groupWithAll": true
         },
         "id": "QUgpUbw"
+      },
+      {
+        "type": "categorical_histogram",
+        "maxValues": 10,
+        "column": {
+          "name": "Species",
+          "type": "CATEGORICAL"
+        },
+        "id": "FhKjeOL"
+      },
+      {
+        "type": "bivariate_box_plot",
+        "maxValues": 5,
+        "groupOthers": true,
+        "xColumn": {
+          "name": "NumMosquitos",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Latitude",
+          "type": "CATEGORICAL"
+        },
+        "filter": {
+          "type": "anum",
+          "column": "Latitude",
+          "values": [
+            "41.974689"
+          ],
+          "name": "41.974689"
+        },
+        "id": "Xt1uIF6"
       }
     ],
     "id": "3xsm8eJ"
   },
   "versionTag": {
-    "versionNumber": 97,
+    "versionNumber": 100,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567502430133
+    "lastModifiedOn": 1567676802606
   },
   "creationTag": {
     "versionNumber": 0,
