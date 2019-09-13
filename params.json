@@ -47,16 +47,16 @@
   "permissions": [
     {
       "group": "data_scientists",
-      "admin": true,
+      "admin": false,
       "readProjectContent": false,
       "writeProjectContent": false,
       "exportDatasetsData": false,
-      "readDashboards": true,
+      "readDashboards": false,
       "writeDashboards": false,
       "moderateDashboards": false,
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
-      "manageExposedElements": false,
+      "manageExposedElements": true,
       "manageAdditionalDashboardUsers": false
     }
   ],
@@ -216,7 +216,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1568398599437
+    "lastModifiedOn": 1568398631954
   },
   "creationTag": {
     "versionNumber": 0,
