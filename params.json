@@ -8,6 +8,13 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "titanic",
+          "objectType": "DATASET"
+        },
+        "modes": []
       }
     ]
   },
@@ -19,6 +26,16 @@
         "rules": [
           {
             "targetProject": "TEESTEMPTYFLOW",
+            "appearOnFlow": true
+          }
+        ]
+      },
+      {
+        "type": "DATASET",
+        "localName": "titanic",
+        "rules": [
+          {
+            "targetProject": "TEST",
             "appearOnFlow": true
           }
         ]
@@ -180,11 +197,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1568397340836
+    "lastModifiedOn": 1568398212492
   },
   "creationTag": {
     "versionNumber": 0,
