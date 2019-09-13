@@ -48,7 +48,7 @@
     {
       "group": "data_scientists",
       "admin": false,
-      "readProjectContent": false,
+      "readProjectContent": true,
       "writeProjectContent": false,
       "exportDatasetsData": false,
       "readDashboards": false,
@@ -56,7 +56,7 @@
       "moderateDashboards": false,
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
-      "manageExposedElements": true,
+      "manageExposedElements": false,
       "manageAdditionalDashboardUsers": false
     }
   ],
@@ -216,7 +216,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1568398631954
+    "lastModifiedOn": 1568398643534
   },
   "creationTag": {
     "versionNumber": 0,
