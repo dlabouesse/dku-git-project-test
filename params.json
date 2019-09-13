@@ -53,7 +53,7 @@
       "exportDatasetsData": false,
       "readDashboards": false,
       "writeDashboards": true,
-      "moderateDashboards": false,
+      "moderateDashboards": true,
       "runScenarios": false,
       "manageDashboardAuthorizations": false,
       "manageExposedElements": false,
@@ -216,7 +216,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1568399333006
+    "lastModifiedOn": 1568399369482
   },
   "creationTag": {
     "versionNumber": 0,
