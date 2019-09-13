@@ -55,8 +55,8 @@
       "writeDashboards": true,
       "moderateDashboards": true,
       "runScenarios": false,
-      "manageDashboardAuthorizations": true,
-      "manageExposedElements": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": true,
       "manageAdditionalDashboardUsers": false
     }
   ],
@@ -216,7 +216,7 @@
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1568399405477
+    "lastModifiedOn": 1568399407770
   },
   "creationTag": {
     "versionNumber": 0,
