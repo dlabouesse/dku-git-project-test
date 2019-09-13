@@ -47,7 +47,7 @@
   "permissions": [
     {
       "group": "data_scientists",
-      "admin": false,
+      "admin": true,
       "readProjectContent": false,
       "writeProjectContent": false,
       "exportDatasetsData": false,
@@ -212,11 +212,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1568398537929
+    "lastModifiedOn": 1568398599437
   },
   "creationTag": {
     "versionNumber": 0,
