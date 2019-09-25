@@ -799,17 +799,179 @@
           }
         ],
         "id": "SUfZlux"
+      },
+      {
+        "type": "pca",
+        "groupBy": {
+          "groupingColumn": "Sex",
+          "maxGroupingValues": 5,
+          "groupWithOthers": true,
+          "groupWithAll": false
+        },
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": false,
+          "threshold": 0.0
+        },
+        "columns": [
+          {
+            "name": "PassengerId",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Survived",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Pclass",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Age",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "SibSp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Parch",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Fare",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "U8XcyPA"
+      },
+      {
+        "type": "fit_distribution",
+        "distributions": [
+          {
+            "distribution": {
+              "type": "normal"
+            }
+          },
+          {
+            "distribution": {
+              "type": "normal_mixture",
+              "nbComponents": 2
+            }
+          }
+        ],
+        "column": {
+          "name": "Age",
+          "type": "CONTINUOUS"
+        },
+        "id": "ZYPhwrw"
+      },
+      {
+        "type": "fit_curve",
+        "curves": [
+          {
+            "type": "polynomial",
+            "degree": 2
+          }
+        ],
+        "xColumn": {
+          "name": "Pclass",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Age",
+          "type": "CONTINUOUS"
+        },
+        "id": "fpRFEIs"
+      },
+      {
+        "type": "fit_curve",
+        "curves": [
+          {
+            "type": "polynomial",
+            "degree": 2
+          }
+        ],
+        "xColumn": {
+          "name": "Age",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Parch",
+          "type": "CONTINUOUS"
+        },
+        "id": "xQK2rGn"
+      },
+      {
+        "type": "correlation_matrix",
+        "heatmapParams": {
+          "showValues": true,
+          "showColors": true,
+          "showAbsValues": true,
+          "threshold": 0.0
+        },
+        "metric": "PEARSON",
+        "columns": [
+          {
+            "name": "PassengerId",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Survived",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Pclass",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Age",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "SibSp",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Parch",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Fare",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "id": "1mtOIDp"
+      },
+      {
+        "type": "fit_curve",
+        "curves": [
+          {
+            "type": "polynomial",
+            "degree": 2
+          }
+        ],
+        "xColumn": {
+          "name": "SibSp",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "Parch",
+          "type": "CONTINUOUS"
+        },
+        "id": "pUOzEj4"
       }
     ],
     "id": "yrAXALU"
   },
   "isInsightWorksheet": false,
   "versionTag": {
-    "versionNumber": 59,
+    "versionNumber": 75,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1569430476065
+    "lastModifiedOn": 1569430905734
   },
   "creationTag": {
     "versionNumber": 0,
