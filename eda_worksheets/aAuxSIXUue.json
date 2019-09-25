@@ -803,12 +803,13 @@
     ],
     "id": "yrAXALU"
   },
+  "isInsightWorksheet": false,
   "versionTag": {
-    "versionNumber": 55,
+    "versionNumber": 57,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1569427749344
+    "lastModifiedOn": 1569429826320
   },
   "creationTag": {
     "versionNumber": 0,
