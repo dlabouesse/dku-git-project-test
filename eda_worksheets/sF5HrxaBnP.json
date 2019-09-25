@@ -58,12 +58,13 @@
     ],
     "id": "G5LepMM"
   },
+  "isInsightWorksheet": false,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567694755845
+    "lastModifiedOn": 1569431097238
   },
   "creationTag": {
     "versionNumber": 0,
