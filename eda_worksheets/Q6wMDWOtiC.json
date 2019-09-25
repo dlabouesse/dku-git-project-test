@@ -239,57 +239,6 @@
         "id": "SUSjwbG"
       },
       {
-        "type": "pca",
-        "columns": [
-          {
-            "name": "YearMade",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "SalePrice",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "SalesID",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "MachineID",
-            "type": "CONTINUOUS"
-          }
-        ],
-        "splitBy": {
-          "groupingColumn": "Engine_Horsepower",
-          "maxGroupingValues": 5,
-          "groupWithOthers": true,
-          "groupWithAll": false
-        },
-        "id": "1Ry9NJi"
-      },
-      {
-        "type": "correlation_matrix",
-        "metric": "PEARSON",
-        "columns": [
-          {
-            "name": "YearMade",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "SalePrice",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "SalesID",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "MachineID",
-            "type": "CONTINUOUS"
-          }
-        ],
-        "id": "6V6CIRR"
-      },
-      {
         "type": "fit_distribution",
         "distributions": [
           {
@@ -369,12 +318,6 @@
         "yColumn": {
           "name": "YearMade",
           "type": "CATEGORICAL"
-        },
-        "splitBy": {
-          "groupingColumn": "Enclosure",
-          "maxGroupingValues": 5,
-          "groupWithOthers": true,
-          "groupWithAll": true
         },
         "id": "QfyXXIo"
       },
@@ -1129,12 +1072,13 @@
     ],
     "id": "8YPL2qO"
   },
+  "isInsightWorksheet": false,
   "versionTag": {
-    "versionNumber": 1790,
+    "versionNumber": 1792,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1569427806734
+    "lastModifiedOn": 1569431299939
   },
   "creationTag": {
     "versionNumber": 0,
