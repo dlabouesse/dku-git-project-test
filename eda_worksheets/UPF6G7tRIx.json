@@ -170,12 +170,13 @@
     ],
     "id": "tEg9IoY"
   },
+  "isInsightWorksheet": false,
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567685485881
+    "lastModifiedOn": 1569431078656
   },
   "creationTag": {
     "versionNumber": 0,
