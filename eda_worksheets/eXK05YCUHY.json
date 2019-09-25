@@ -160,12 +160,13 @@
     ],
     "id": "YM9A3Cs"
   },
+  "isInsightWorksheet": false,
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 11,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567685497745
+    "lastModifiedOn": 1569431084106
   },
   "creationTag": {
     "versionNumber": 0,
