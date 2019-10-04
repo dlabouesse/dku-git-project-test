@@ -10,7 +10,7 @@
               "top": 0,
               "left": 0,
               "width": 12,
-              "height": 5
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {},
@@ -24,7 +24,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 5,
+              "top": 4,
               "left": 0,
               "width": 6,
               "height": 5
@@ -42,7 +42,7 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": 5,
+              "top": 4,
               "left": 6,
               "width": 6,
               "height": 5
@@ -67,11 +67,11 @@
   "name": "EDA\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1570213266814
+    "lastModifiedOn": 1570213279196
   },
   "creationTag": {
     "versionNumber": 0,
