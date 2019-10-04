@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1567434153879
+    "lastModifiedOn": 1570212798473
   },
   "creationTag": {
     "versionNumber": 0,
@@ -90,7 +90,7 @@
       },
       {
         "name": "Survived",
-        "type": "bigint"
+        "type": "string"
       },
       {
         "name": "Pclass",
