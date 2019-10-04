@@ -24,8 +24,8 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
+              "top": 5,
+              "left": 0,
               "width": 10,
               "height": 5
             },
@@ -33,6 +33,7 @@
             "tileParams": {},
             "autoLoad": true,
             "showTitle": "YES",
+            "title": "Mosaic plot on Age \u0026 Survived for women",
             "insightId": "IYIMtid",
             "insightType": "eda",
             "displayMode": "INSIGHT",
@@ -48,11 +49,11 @@
   "name": "EDA\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1570213132692
+    "lastModifiedOn": 1570213155662
   },
   "creationTag": {
     "versionNumber": 0,
