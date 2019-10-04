@@ -42,14 +42,6 @@
             "type": "CONTINUOUS"
           },
           {
-            "name": "Survived",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "Pclass",
-            "type": "CONTINUOUS"
-          },
-          {
             "name": "Name",
             "type": "CATEGORICAL"
           },
@@ -58,8 +50,20 @@
             "type": "CATEGORICAL"
           },
           {
+            "name": "Age",
+            "type": "CONTINUOUS"
+          },
+          {
             "name": "Ticket",
             "type": "CATEGORICAL"
+          },
+          {
+            "name": "Fare",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "Pclass",
+            "type": "CONTINUOUS"
           },
           {
             "name": "SibSp",
@@ -70,20 +74,16 @@
             "type": "CONTINUOUS"
           },
           {
-            "name": "Age",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "Fare",
-            "type": "CONTINUOUS"
-          },
-          {
             "name": "Cabin",
             "type": "CATEGORICAL"
           },
           {
             "name": "Embarked",
             "type": "CATEGORICAL"
+          },
+          {
+            "name": "Survived",
+            "type": "CONTINUOUS"
           }
         ],
         "cards": [
@@ -150,19 +150,19 @@
           {
             "type": "column_card",
             "column": {
-              "name": "Survived",
-              "type": "CONTINUOUS"
+              "name": "Name",
+              "type": "CATEGORICAL"
             },
             "cards": [
               {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
                 "column": {
-                  "name": "Survived",
-                  "type": "CONTINUOUS"
+                  "name": "Name",
+                  "type": "CATEGORICAL"
                 },
-                "id": "nu6oYxz"
+                "id": "0dZ44MM"
               },
               {
                 "type": "univariate_summary",
@@ -189,23 +189,260 @@
                 "showRange": false,
                 "showMode": true,
                 "column": {
-                  "name": "Survived",
+                  "name": "Name",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ckqXWi9"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Name",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ITRZYhj"
+              }
+            ],
+            "id": "Qlo9xDz"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Sex",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "Sex",
+                  "type": "CATEGORICAL"
+                },
+                "id": "2YQY90i"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "Sex",
+                  "type": "CATEGORICAL"
+                },
+                "id": "7ShuglR"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Sex",
+                  "type": "CATEGORICAL"
+                },
+                "id": "eeIJ0cn"
+              }
+            ],
+            "id": "RvfI0ag"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Age",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "column": {
+                  "name": "Age",
                   "type": "CONTINUOUS"
                 },
-                "id": "9KPSYzw"
+                "id": "aijkL3r"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "Age",
+                  "type": "CONTINUOUS"
+                },
+                "id": "vW3JRF6"
               },
               {
                 "type": "quantile_table",
                 "confidenceLevel": 0.95,
                 "showConfidenceInterval": false,
                 "column": {
-                  "name": "Survived",
+                  "name": "Age",
                   "type": "CONTINUOUS"
                 },
-                "id": "Bjtn51O"
+                "id": "kA1ALqM"
               }
             ],
-            "id": "X53B6Ow"
+            "id": "aRC5Khr"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Ticket",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "Ticket",
+                  "type": "CATEGORICAL"
+                },
+                "id": "qafQzlM"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "Ticket",
+                  "type": "CATEGORICAL"
+                },
+                "id": "K0gn0Ri"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "Ticket",
+                  "type": "CATEGORICAL"
+                },
+                "id": "nJXrlvd"
+              }
+            ],
+            "id": "FjXBHce"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Fare",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "column": {
+                  "name": "Fare",
+                  "type": "CONTINUOUS"
+                },
+                "id": "F0lM5tz"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "Fare",
+                  "type": "CONTINUOUS"
+                },
+                "id": "gCFg9eq"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Fare",
+                  "type": "CONTINUOUS"
+                },
+                "id": "x7Zaru6"
+              }
+            ],
+            "id": "jPmAVbG"
           },
           {
             "type": "column_card",
@@ -266,180 +503,6 @@
               }
             ],
             "id": "tD0OVoX"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Name",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "categorical_histogram",
-                "maxValues": 10,
-                "column": {
-                  "name": "Name",
-                  "type": "CATEGORICAL"
-                },
-                "id": "0dZ44MM"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "Name",
-                  "type": "CATEGORICAL"
-                },
-                "id": "ckqXWi9"
-              },
-              {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
-                "column": {
-                  "name": "Name",
-                  "type": "CATEGORICAL"
-                },
-                "id": "ITRZYhj"
-              }
-            ],
-            "id": "Qlo9xDz"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Sex",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "categorical_histogram",
-                "maxValues": 10,
-                "column": {
-                  "name": "Sex",
-                  "type": "CATEGORICAL"
-                },
-                "id": "2YQY90i"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "Sex",
-                  "type": "CATEGORICAL"
-                },
-                "id": "7ShuglR"
-              },
-              {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
-                "column": {
-                  "name": "Sex",
-                  "type": "CATEGORICAL"
-                },
-                "id": "eeIJ0cn"
-              }
-            ],
-            "id": "RvfI0ag"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Ticket",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "categorical_histogram",
-                "maxValues": 10,
-                "column": {
-                  "name": "Ticket",
-                  "type": "CATEGORICAL"
-                },
-                "id": "qafQzlM"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "Ticket",
-                  "type": "CATEGORICAL"
-                },
-                "id": "K0gn0Ri"
-              },
-              {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
-                "column": {
-                  "name": "Ticket",
-                  "type": "CATEGORICAL"
-                },
-                "id": "nJXrlvd"
-              }
-            ],
-            "id": "FjXBHce"
           },
           {
             "type": "column_card",
@@ -564,126 +627,6 @@
           {
             "type": "column_card",
             "column": {
-              "name": "Age",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "column": {
-                  "name": "Age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "aijkL3r"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "Age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "vW3JRF6"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "Age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "kA1ALqM"
-              }
-            ],
-            "id": "aRC5Khr"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Fare",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "column": {
-                  "name": "Fare",
-                  "type": "CONTINUOUS"
-                },
-                "id": "F0lM5tz"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "Fare",
-                  "type": "CONTINUOUS"
-                },
-                "id": "gCFg9eq"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "Fare",
-                  "type": "CONTINUOUS"
-                },
-                "id": "x7Zaru6"
-              }
-            ],
-            "id": "jPmAVbG"
-          },
-          {
-            "type": "column_card",
-            "column": {
               "name": "Cabin",
               "type": "CATEGORICAL"
             },
@@ -691,6 +634,7 @@
               {
                 "type": "categorical_histogram",
                 "maxValues": 10,
+                "groupOthers": false,
                 "column": {
                   "name": "Cabin",
                   "type": "CATEGORICAL"
@@ -749,6 +693,7 @@
               {
                 "type": "categorical_histogram",
                 "maxValues": 10,
+                "groupOthers": false,
                 "column": {
                   "name": "Embarked",
                   "type": "CATEGORICAL"
@@ -796,6 +741,66 @@
               }
             ],
             "id": "9ccGLIb"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Survived",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "column": {
+                  "name": "Survived",
+                  "type": "CONTINUOUS"
+                },
+                "id": "nu6oYxz"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "showTotalCount": true,
+                "showMean": true,
+                "showSum": false,
+                "showMedian": true,
+                "showStd": true,
+                "showVariance": false,
+                "showSkewness": false,
+                "showKurtosis": false,
+                "showSem": false,
+                "showCompleteCount": false,
+                "showNbEmpty": true,
+                "showZeroCount": false,
+                "showZeroRatio": false,
+                "showNonZeroRatio": false,
+                "showIQR": false,
+                "showDistinctCount": true,
+                "showNbNonEmpty": false,
+                "showMixMax": true,
+                "showRange": false,
+                "showMode": true,
+                "column": {
+                  "name": "Survived",
+                  "type": "CONTINUOUS"
+                },
+                "id": "9KPSYzw"
+              },
+              {
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "column": {
+                  "name": "Survived",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Bjtn51O"
+              }
+            ],
+            "id": "X53B6Ow"
           }
         ],
         "id": "SUfZlux"
@@ -868,42 +873,6 @@
         "id": "ZYPhwrw"
       },
       {
-        "type": "fit_curve",
-        "curves": [
-          {
-            "type": "polynomial",
-            "degree": 2
-          }
-        ],
-        "xColumn": {
-          "name": "Pclass",
-          "type": "CONTINUOUS"
-        },
-        "yColumn": {
-          "name": "Age",
-          "type": "CONTINUOUS"
-        },
-        "id": "fpRFEIs"
-      },
-      {
-        "type": "fit_curve",
-        "curves": [
-          {
-            "type": "polynomial",
-            "degree": 2
-          }
-        ],
-        "xColumn": {
-          "name": "Age",
-          "type": "CONTINUOUS"
-        },
-        "yColumn": {
-          "name": "Parch",
-          "type": "CONTINUOUS"
-        },
-        "id": "xQK2rGn"
-      },
-      {
         "type": "correlation_matrix",
         "heatmapParams": {
           "showValues": true,
@@ -943,492 +912,17 @@
           }
         ],
         "id": "1mtOIDp"
-      },
-      {
-        "type": "fit_curve",
-        "curves": [
-          {
-            "type": "polynomial",
-            "degree": 2
-          }
-        ],
-        "xColumn": {
-          "name": "SibSp",
-          "type": "CONTINUOUS"
-        },
-        "yColumn": {
-          "name": "Parch",
-          "type": "CONTINUOUS"
-        },
-        "id": "pUOzEj4"
-      },
-      {
-        "type": "univariate_header",
-        "showHistogram": true,
-        "showQuantile": true,
-        "showFrequencyTable": true,
-        "showSummary": true,
-        "showBoxPlot": true,
-        "xColumns": [
-          {
-            "name": "PassengerId",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "Name",
-            "type": "CATEGORICAL"
-          },
-          {
-            "name": "Survived",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "Pclass",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "Sex",
-            "type": "CATEGORICAL"
-          },
-          {
-            "name": "Age",
-            "type": "CONTINUOUS"
-          },
-          {
-            "name": "SibSp",
-            "type": "CONTINUOUS"
-          }
-        ],
-        "cards": [
-          {
-            "type": "column_card",
-            "column": {
-              "name": "PassengerId",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "column": {
-                  "name": "PassengerId",
-                  "type": "CONTINUOUS"
-                },
-                "id": "RoEFrkn"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "PassengerId",
-                  "type": "CONTINUOUS"
-                },
-                "id": "Pa1Ut52"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "PassengerId",
-                  "type": "CONTINUOUS"
-                },
-                "id": "jwZZRtL"
-              }
-            ],
-            "id": "4KjmRCJ"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Name",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "categorical_histogram",
-                "maxValues": 10,
-                "column": {
-                  "name": "Name",
-                  "type": "CATEGORICAL"
-                },
-                "id": "PL6s62w"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "Name",
-                  "type": "CATEGORICAL"
-                },
-                "id": "vfJQXAl"
-              },
-              {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
-                "column": {
-                  "name": "Name",
-                  "type": "CATEGORICAL"
-                },
-                "id": "GFsWenX"
-              }
-            ],
-            "id": "7mtRkJV"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Survived",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "column": {
-                  "name": "Survived",
-                  "type": "CONTINUOUS"
-                },
-                "id": "rlYYZDv"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "Survived",
-                  "type": "CONTINUOUS"
-                },
-                "id": "6xTFcUG"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "Survived",
-                  "type": "CONTINUOUS"
-                },
-                "id": "Vvnqt6F"
-              }
-            ],
-            "id": "tgf0dM7"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Pclass",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "column": {
-                  "name": "Pclass",
-                  "type": "CONTINUOUS"
-                },
-                "id": "X4pmkt8"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "Pclass",
-                  "type": "CONTINUOUS"
-                },
-                "id": "g8UB3La"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "Pclass",
-                  "type": "CONTINUOUS"
-                },
-                "id": "qN6tfDd"
-              }
-            ],
-            "id": "2PQKq9K"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Sex",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "categorical_histogram",
-                "maxValues": 10,
-                "column": {
-                  "name": "Sex",
-                  "type": "CATEGORICAL"
-                },
-                "id": "DzQuNm4"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "Sex",
-                  "type": "CATEGORICAL"
-                },
-                "id": "6hVLH0H"
-              },
-              {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
-                "column": {
-                  "name": "Sex",
-                  "type": "CATEGORICAL"
-                },
-                "id": "2ouzZ7C"
-              }
-            ],
-            "id": "0XwvgvI"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "Age",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "column": {
-                  "name": "Age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "YPNLrO5"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "Age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "voRiMSE"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "Age",
-                  "type": "CONTINUOUS"
-                },
-                "id": "n1p0yrr"
-              }
-            ],
-            "id": "Koz1US7"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "SibSp",
-              "type": "CONTINUOUS"
-            },
-            "cards": [
-              {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "column": {
-                  "name": "SibSp",
-                  "type": "CONTINUOUS"
-                },
-                "id": "fBegN7U"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "showTotalCount": true,
-                "showMean": true,
-                "showSum": false,
-                "showMedian": true,
-                "showStd": true,
-                "showVariance": false,
-                "showSkewness": false,
-                "showKurtosis": false,
-                "showSem": false,
-                "showCompleteCount": false,
-                "showNbEmpty": true,
-                "showZeroCount": false,
-                "showZeroRatio": false,
-                "showNonZeroRatio": false,
-                "showIQR": false,
-                "showDistinctCount": true,
-                "showNbNonEmpty": false,
-                "showMixMax": true,
-                "showRange": false,
-                "showMode": true,
-                "column": {
-                  "name": "SibSp",
-                  "type": "CONTINUOUS"
-                },
-                "id": "5JbIWDn"
-              },
-              {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "column": {
-                  "name": "SibSp",
-                  "type": "CONTINUOUS"
-                },
-                "id": "PxJTJip"
-              }
-            ],
-            "id": "DGmnvh6"
-          }
-        ],
-        "id": "3d0bT6t"
       }
     ],
     "id": "yrAXALU"
   },
   "isInsightWorksheet": false,
   "versionTag": {
-    "versionNumber": 78,
+    "versionNumber": 89,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1570183453329
+    "lastModifiedOn": 1570212269465
   },
   "creationTag": {
     "versionNumber": 0,
