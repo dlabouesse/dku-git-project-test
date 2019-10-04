@@ -239,34 +239,6 @@
         "id": "SUSjwbG"
       },
       {
-        "type": "fit_distribution",
-        "distributions": [
-          {
-            "distribution": {
-              "type": "normal_mixture",
-              "nbComponents": 2
-            }
-          },
-          {
-            "distribution": {
-              "type": "normal_mixture",
-              "nbComponents": 4
-            }
-          },
-          {
-            "distribution": {
-              "type": "normal_mixture",
-              "nbComponents": 8
-            }
-          }
-        ],
-        "column": {
-          "name": "SalePrice",
-          "type": "CONTINUOUS"
-        },
-        "id": "Z8Oasf5"
-      },
-      {
         "type": "pairwise_ttest",
         "adjustmentMethod": "HOLM_BONFERRONI",
         "maxGroups": 10,
@@ -297,31 +269,6 @@
         "id": "NldrS39"
       },
       {
-        "type": "mosaic_plot",
-        "maxValues": 5,
-        "groupOthers": true,
-        "xColumn": {
-          "name": "ProductGroup",
-          "type": "CATEGORICAL"
-        },
-        "yColumn": {
-          "name": "YearMade",
-          "type": "CATEGORICAL"
-        },
-        "id": "QfyXXIo"
-      },
-      {
-        "type": "univariate_header",
-        "showHistogram": false,
-        "showQuantile": true,
-        "showFrequencyTable": false,
-        "showSummary": false,
-        "showBoxPlot": false,
-        "xColumns": [],
-        "cards": [],
-        "id": "l4UqEfn"
-      },
-      {
         "type": "chi2_independence_test",
         "maxValuesX": 5,
         "maxValuesY": 3,
@@ -341,11 +288,11 @@
   },
   "isInsightWorksheet": false,
   "versionTag": {
-    "versionNumber": 1799,
+    "versionNumber": 1804,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1570212520176
+    "lastModifiedOn": 1570213405691
   },
   "creationTag": {
     "versionNumber": 0,
