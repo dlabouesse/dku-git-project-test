@@ -15,6 +15,14 @@
           "objectType": "DATASET"
         },
         "modes": []
+      },
+      {
+        "objectRef": {
+          "objectId": "titanic"
+        },
+        "modes": [
+          "READ"
+        ]
       }
     ]
   },
@@ -212,11 +220,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1568399407770
+    "lastModifiedOn": 1570213047107
   },
   "creationTag": {
     "versionNumber": 0,
