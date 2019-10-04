@@ -1,0 +1,75 @@
+{
+  "type": "eda",
+  "params": {
+    "card": {
+      "type": "mosaic_plot",
+      "maxValues": 5,
+      "groupOthers": true,
+      "xColumn": {
+        "name": "Age",
+        "type": "CONTINUOUS"
+      },
+      "yColumn": {
+        "name": "Survived",
+        "type": "CATEGORICAL"
+      },
+      "filter": {
+        "type": "anum",
+        "column": "Sex",
+        "values": [
+          "male"
+        ],
+        "name": "male"
+      },
+      "id": "mtNbMjm"
+    },
+    "dataSpec": {
+      "dataset": {
+        "projectKey": "EDA",
+        "id": "titanic"
+      },
+      "datasetSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true
+    }
+  },
+  "owner": "admin",
+  "listed": true,
+  "name": "Mosaic plot on Age \u0026 Survived ",
+  "dashboardCreationId": "yEnzc1R",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1570213130804
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1570213130804
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
