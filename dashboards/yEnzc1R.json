@@ -48,11 +48,11 @@
   "name": "EDA\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1570213130809
+    "lastModifiedOn": 1570213132692
   },
   "creationTag": {
     "versionNumber": 0,
