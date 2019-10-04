@@ -1,0 +1,99 @@
+{
+  "type": "eda",
+  "params": {
+    "card": {
+      "type": "pca",
+      "groupBy": {
+        "groupingColumn": "Sex",
+        "maxGroupingValues": 5,
+        "groupWithOthers": true,
+        "groupWithAll": false
+      },
+      "heatmapParams": {
+        "showValues": true,
+        "showColors": true,
+        "showAbsValues": false,
+        "threshold": 0.0
+      },
+      "columns": [
+        {
+          "name": "PassengerId",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Survived",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Pclass",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Age",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "SibSp",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Parch",
+          "type": "CONTINUOUS"
+        },
+        {
+          "name": "Fare",
+          "type": "CONTINUOUS"
+        }
+      ],
+      "id": "U8XcyPA"
+    },
+    "dataSpec": {
+      "dataset": {
+        "projectKey": "EDA",
+        "id": "titanic"
+      },
+      "datasetSelection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 100000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": true
+    }
+  },
+  "owner": "admin",
+  "listed": true,
+  "name": "PCA",
+  "dashboardCreationId": "yEnzc1R",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1570213047827
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1570213047827
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
