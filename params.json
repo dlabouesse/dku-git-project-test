@@ -52,22 +52,7 @@
   },
   "projectType": "REGULAR",
   "owner": "admin",
-  "permissions": [
-    {
-      "group": "data_scientists",
-      "admin": false,
-      "readProjectContent": true,
-      "writeProjectContent": false,
-      "exportDatasetsData": false,
-      "readDashboards": false,
-      "writeDashboards": true,
-      "moderateDashboards": true,
-      "runScenarios": false,
-      "manageDashboardAuthorizations": false,
-      "manageExposedElements": true,
-      "manageAdditionalDashboardUsers": false
-    }
-  ],
+  "permissions": [],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -220,11 +205,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1570213186881
+    "lastModifiedOn": 1575628381647
   },
   "creationTag": {
     "versionNumber": 0,
@@ -234,7 +219,9 @@
     "lastModifiedOn": 1565971661185
   },
   "shortDesc": "The project *EDA* was created by Local administrator on Aug 16th 2019",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [
