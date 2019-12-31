@@ -157,7 +157,7 @@
       }
     }
   },
-  "name": "GIT TEST",
+  "name": "GIT TEST (exp2)",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -213,11 +213,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1577799875866
+    "lastModifiedOn": 1577799878247
   },
   "creationTag": {
     "versionNumber": 0,
@@ -226,7 +226,7 @@
     },
     "lastModifiedOn": 1565971661185
   },
-  "shortDesc": "The project *EDA* was created by Local administrator on Aug 16th 2019\nThe project *GITTEST* was copied from *EDA_TEST_TEMP_DIMITRI* by Local administrator on Dec 31st 2019",
+  "shortDesc": "The project *EDA* was created by Local administrator on Aug 16th 2019\nThe project *GITTEST* was copied from *EDA_TEST_TEMP_DIMITRI* by Local administrator on Dec 31st 2019\nThe project *GIT_TEST_EXP2* was copied from *GITTEST* by Local administrator on Dec 31st 2019",
   "tags": [
     "duplicated"
   ],
